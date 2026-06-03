@@ -1,3 +1,10 @@
+// ServiceNow FlowGuard — Cross-Environment Validator
+// Copyright (C) 2026 Vladimir Kapustin
+// SPDX-License-Identifier: AGPL-3.0
+//
+// Validates Flow Designer flows against all configured remote environments.
+// Performs 6 checks: connectivity, subflow existence, version mismatch,
+// action snapshots, data pill schemas, and action deprecation.
 var FlowGuardCrossEnvValidator = Class.create();
 FlowGuardCrossEnvValidator.prototype = {
 

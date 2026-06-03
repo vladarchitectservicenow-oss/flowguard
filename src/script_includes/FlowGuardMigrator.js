@@ -1,3 +1,9 @@
+// ServiceNow FlowGuard — Migration Engine
+// Copyright (C) 2026 Vladimir Kapustin
+// SPDX-License-Identifier: AGPL-3.0
+//
+// Full migration pipeline: cross-env validation → snapshot → deploy → verify → rollback.
+// Orchestrates FlowGuardCrossEnvValidator for pre-flight checks.
 var FlowGuardMigrator = Class.create();
 FlowGuardMigrator.prototype = {
     initialize: function() {
